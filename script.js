@@ -3,6 +3,7 @@ let secretNumber = Math.trunc(Math.random() * 20);
 let number = document.querySelector(".number");
 let message = document.querySelector(".message");
 let score = 20;
+let highScore = 0;
 let body = document.querySelector("body");
 const againBtn = document.querySelector(".again");
 // for testing
@@ -16,6 +17,7 @@ function checkScore() {
     message.textContent = "You Lose The Game :(";
   }
 }
+
 checkBtn.addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   //   when there is no input
@@ -36,6 +38,12 @@ checkBtn.addEventListener("click", function () {
     number.textContent = secretNumber;
     body.style.backgroundColor = "#60b347";
     number.style.width = "30rem";
+
+    // handle high score
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector(".highscore").textContent = highScore;
+    }
   }
 });
 
