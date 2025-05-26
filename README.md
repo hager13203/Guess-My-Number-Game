@@ -38,3 +38,9 @@ The player must guess a random number between 1 and 20. With each wrong guess, t
 
 This project is a **practical application of DOM manipulation** using JavaScript.  
 it was built by following Jonas Schmedtmann's JavaScript course on Udemy, with some custom touches
+
+
+
+![image](https://github.com/user-attachments/assets/336025a7-04ab-4ca0-81ea-05dbf2e410ea)
+
+![image](https://github.com/user-attachments/assets/b2170dd1-c52d-462c-8102-e20b8b5dadaa)
